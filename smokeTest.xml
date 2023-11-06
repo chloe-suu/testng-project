@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test Suite">
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+    <test verbose="2"  name="Smoke Test">
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Smoke Test"  />-->
+<!--            </run>-->
+<!--        </groups>-->
+
+        <classes>
+            <class name="tests.HomePageTest">
+                <methods>
+                    <include name="verifyOpeningProperPagesWhenClickingNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
